@@ -8,14 +8,14 @@ include ("functions/functions.php");
 <head>
   <title>E-shop</title>
 
-  <!-- Latest compiled and minified CSS -->
+  <!-- {Bootstrap}-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css" media="all" />
 </head>
 <body>
 
   <div class="main_container">
-
+<!--Header-->
     <div class="header_container"="header_container">
 
       <img id="ricon" src="images/1.png" height="150px" width="800px"  />
@@ -24,7 +24,9 @@ include ("functions/functions.php");
       " height="150px" width="200px"  />
 
     </div>
+<!--End Header-->
 
+<!--Start menubar -->
     <div class="menubar">
 
       <ul class="nav nav-tabs">
@@ -47,7 +49,9 @@ include ("functions/functions.php");
           </div>
         </div>
 
+<!--End menubar-->
 
+<!--sideBar Categories and Brands-->
         <div class="content_container">
           <div id="sidebar">
             <div id="sidebar_title"> Categories</div>
@@ -76,12 +80,15 @@ include ("functions/functions.php");
 
 
       <div id="content_area">
-
+          <div id="products_display">
+            <?php getPro(); ?>
+          </div>
       </div>
 
 
     </div>
 
+<!--footer-->
     <div id="footer"></div>
     <h3 style="text-align:center; ">&copy; 2015 by Kira</h2>
   </div>

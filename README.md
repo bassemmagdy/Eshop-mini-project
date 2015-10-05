@@ -1,1 +1,1 @@
-# Eshop-mini-project
+# Eshop
