@@ -90,6 +90,23 @@ body{background: gray;}
 	margin-left: 20px;
 	padding: 10px;
 }
+#single_product img
+{
+	background: #000000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 5px solid #000000;
+
+}
+#single_product button
+
+{
+	background: #000000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 5px solid #000000;
+
+}
 #form
 {
 	background-color: #FFEFD5;
