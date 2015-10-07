@@ -87,8 +87,9 @@ body{background: gray;}
 #single_product
 {
 	float: left;
-	margin-left: 20px;
+	margin-left: 40px;
 	padding: 10px;
+
 }
 #single_product img
 {
@@ -106,6 +107,13 @@ body{background: gray;}
 	-webkit-border-radius: 5px;
 	border: 5px solid #000000;
 
+}
+
+#cart
+{
+	width: 800px;
+	height: 50px;
+	background: black;
 }
 #form
 {

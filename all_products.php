@@ -82,9 +82,30 @@ include ("functions/functions.php");
         </div>
 
           <div id="products_display">
-            <?php getPro(); ?>
-            <?php getCatPro(); ?>
-            <?php getBrandPro(); ?>
+      <?php global $con;
+        $get_pro = "select * from products order by RAND() Limit 0,6";
+        $run_pro = mysqli_query($con, $get_pro);
+
+
+      while($row_pro=mysqli_fetch_array($run_pro))
+      {
+        $pro_id = $row_pro['product_id'];
+        $pro_cat = $row_pro['product_cat'];
+        $pro_brand = $row_pro['product_brand'];
+        $pro_name = $row_pro['product_name'];
+        $pro_price = $row_pro['product_price'];
+
+        $pro_image = $row_pro['product_image'];
+
+
+        echo " <div id='single_product' >
+                    <h3>$$pro_name</h3>
+                    <img src= 'admin/product_images/$pro_image' width='100' height='180'/>
+                    <p>$pro_price</p>
+                    <a href='details.php?pro_id=$pro_id' style= float:left> Details</a>
+                    <a href='index.php?pro_id=$pro_id'><button style='float:right'> Add to cart</button></a>
+                </div>";
+      } ?>
           </div>
       </div>
 
